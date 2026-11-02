@@ -7,5 +7,5 @@ jobs:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v4
-    - run: javac srv/Hola.java
-    - run: java -cp srv Hola
+    - run: javac src/Hola.java
+    - run: java -cp src Hola
