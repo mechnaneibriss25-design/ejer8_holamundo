@@ -1,0 +1,11 @@
+name: Hola
+
+on: [push]
+
+jobs:
+ hola:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v4
+    - run: javac srv/Hola.java
+    - run: java -cp srv Hola
